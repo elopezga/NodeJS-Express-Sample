@@ -1,6 +1,14 @@
 # NodeJS-Express-Sample
 Boilerplate NodeJS + Express with examples.
 
+## Why Use NodeJS and Express?
+NodeJS is a runtime environment that allows you to run JavaScript code without the web browser. If you've programmed in Java before, you've ran your code in a runtime environment. This concept is no different for NodeJS. With NodeJS, you are able to run JavaScript code on any platfrom so long as the runtime environment is set up for that platform. This allows you to build applications in JavaScript without needing a web browser to run the code.
+
+Express is a NodeJS module that allows you to run a web (HTTP) server. A web server is a server that accepts GET requests and responds
+to that request (usually to serve a web page or data).
+
+With NodeJS and Express, you can create web applications using JavaScript and web technologies.
+
 ## Getting Started
 ### From Scratch
 Requirements:
