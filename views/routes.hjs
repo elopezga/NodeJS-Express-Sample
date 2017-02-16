@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Routes</title>
+    </head>
+
+    <body>
+        <h2>This page was routed by Express with the /routes URI appendage</h2>
+    </body>
+</html>
