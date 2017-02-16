@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Templating</title>
+    </head>
+    <body>
+        <h2>I have recieved your data as {{data}}</h2>
+    </body>
+</html>
