@@ -15,7 +15,7 @@ You need 3 essential components to enable routing of a URI to an HTML page: a vi
 
 You'll notice that scaffolded Express install has set up a 'views' and 'routes' folder for you. This is where you will stick your views and routing logic, respectively. The last thing needed is the route binding, which is usually done in the main app.js that express runs as the 'server'.
 
-For this example, I have created a route from localhost/routes to the routes.hjs view located in the 'views' folder. It is a very simple standard HTML page with a single headlining text:
+For this example, I have created a route from `localhost/routes` to the routes.hjs view located in the 'views' folder. It is a very simple standard HTML page with a single headlining text:
 
 ```html
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ For this example, I have created a route from localhost/routes to the routes.hjs
 </html>
 ```
 
-This is what is sent to the client when the localhost/routes is requested.
+This is what is sent to the client when the `localhost/routes` is requested.
 
 In order to tell Express to send this page specifically, I created the routes.js file in the 'routes' folder as follows:
 
@@ -56,4 +56,4 @@ var routes = require('./routes/routes');
 app.use('/', routes);
 ```
 
-Notice that in app.js, I have binded the route to '/'. This means that the route binding begins at the root, aka localhost. In routes.js you'll notice that I express the routing of the localhost/routes by /routes. If I had put the route binding in app.js as `app.use('/routes', routes);`, then I would be telling Express that I want to route localhost/routes/routes to the routes page. In a sense, `router.get('/routes', function(req, res, next)` uses the context of `app.use('/', routes);` to initialize the routing configuration; be careful of this!
+Notice that in app.js, I have binded the route to '/'. This means that the route binding begins at the root, aka localhost. In routes.js you'll notice that I express the routing of the `localhost/routes` by `/routes`. If I had put the route binding in app.js as `app.use('/routes', routes);`, then I would be telling Express that I want to route `localhost/routes/routes` to the routes page. In a sense, `router.get('/routes', function(req, res, next)` uses the context of `app.use('/', routes);` to initialize the routing configuration; be careful of this!
