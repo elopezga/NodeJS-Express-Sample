@@ -11,7 +11,7 @@ To visualize this from the clients perspective, when the user requests http://my
 request to the about.html page so that the server serves this page whenever http://myexpresswebsite.com/about is requested.
 
 ## Routing in Express
-You need 3 essential components to enable routing of a URI to an HTML page: a view (HTML page, can be templated), the routing logic, and the rounting bind.
+You need 3 essential components to enable routing of a URI to an HTML page: a view (HTML page, can be templated), the routing logic, and the routing bind.
 
 You'll notice that scaffolded Express install has set up a 'views' and 'routes' folder for you. This is where you will stick your views and routing logic, respectively. The last thing needed is the route binding, which is usually done in the main app.js that express runs as the 'server'.
 
