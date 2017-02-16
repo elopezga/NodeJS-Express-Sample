@@ -2,10 +2,15 @@
 <html>
     <head>
         <title>Static Content</title>
+        <!-- Example of static stylesheet serving -->
+        <link rel='stylesheet' href="/stylesheets/static-content.css" />
         <!-- demonstrate loading css -->
     </head>
     <body>
-        <h2>The content below was loaded from the server</h2>
-        <img src="/images/express.png" />
+        <h2>The content below was served by:</h2>
+        <!-- Example of static image serving -->
+        <div class="center-img">
+            <img class="center-img" src="/images/express.png" />
+        </div>
     </body>
 </html>
