@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Static Content</title>
+        <!-- demonstrate loading css -->
+    </head>
+    <body>
+        <h2>The content below was loaded from the server</h2>
+        <img src="/images/express.png" />
+    </body>
+</html>
