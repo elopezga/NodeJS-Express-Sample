@@ -10,7 +10,7 @@ Specifically, the `--hogan` flag tells Express to use the Hogan templating syste
 
 This is what Hogan templeting looks like:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,7 +26,7 @@ In the code above, the `{{data}}` part is binded to the data variable in JavaScr
 `{{data}}` in the HTML.
 
 The JavaScript that controls the binding looks like this:
-```
+```javascript
 router.get('/templating', function(req, res){
     // Get URL parameters
     let dataParam = req.param('data');
@@ -34,13 +34,13 @@ router.get('/templating', function(req, res){
 });
 ```
 
-## Grabing user information
+## Grabbing user information
 You'll notice that in the `res.render()` call is where you tell what value `data` will hold. The data for each templating
 variable can come from various sources such as a number generated, a database value, or user-input dependant. In the above example,
 the data variable takes on a user-input value grabbed from the URL. The `req.param('data')` is read from the URL query
 `localhost/templating?data=x`. You can also grab data from the user in this format: `localhost/templating/x` using the following code
 
-```
+```javascript
 router.get('/templating/:data', function(req, res){
     // Get parameters from Routing
     let dataParam = req.params.data;
